@@ -13,7 +13,7 @@
   <meta name="author" content="Momomia Restaurant">
   
   <!-- CSS Link & FontAwesome Icons -->
-  <link rel="stylesheet" href="styles.css?v=18">
+  <link rel="stylesheet" href="styles.css?v=19">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -194,33 +194,36 @@
       <button id="close-cart" class="close-cart-btn"><i class="fas fa-times"></i></button>
     </div>
     
-    <!-- Cart Items list container -->
-    <div id="cart-items" class="cart-items-container">
-      <!-- Injected dynamically by app.js -->
-    </div>
-    
-    <!-- Customer Details Form -->
-    <div class="cart-checkout-form">
-      <h3><i class="fas fa-user-edit"></i> Order Details</h3>
-      <div class="order-type-selection">
-        <label class="order-type-label">
-          <input type="radio" name="order-delivery-type" value="delivery" checked>
-          <span>Home Delivery</span>
-        </label>
-        <label class="order-type-label">
-          <input type="radio" name="order-delivery-type" value="takeaway">
-          <span>Takeaway</span>
-        </label>
+    <!-- Scrollable Body wrapper -->
+    <div class="cart-body">
+      <!-- Cart Items list container -->
+      <div id="cart-items" class="cart-items-container">
+        <!-- Injected dynamically by app.js -->
       </div>
       
-      <div class="form-group">
-        <input type="text" id="cust-name" placeholder="Your Name" required>
-      </div>
-      <div class="form-group">
-        <input type="tel" id="cust-phone" placeholder="Phone Number" required>
-      </div>
-      <div class="form-group" id="address-group">
-        <textarea id="cust-address" rows="2" placeholder="Delivery Address" required></textarea>
+      <!-- Customer Details Form -->
+      <div class="cart-checkout-form">
+        <h3><i class="fas fa-user-edit"></i> Order Details</h3>
+        <div class="order-type-selection">
+          <label class="order-type-label">
+            <input type="radio" name="order-delivery-type" value="delivery" checked>
+            <span>Home Delivery</span>
+          </label>
+          <label class="order-type-label">
+            <input type="radio" name="order-delivery-type" value="takeaway">
+            <span>Takeaway</span>
+          </label>
+        </div>
+        
+        <div class="form-group">
+          <input type="text" id="cust-name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" id="cust-phone" placeholder="Phone Number" required>
+        </div>
+        <div class="form-group" id="address-group">
+          <textarea id="cust-address" rows="2" placeholder="Delivery Address" required></textarea>
+        </div>
       </div>
     </div>
     
