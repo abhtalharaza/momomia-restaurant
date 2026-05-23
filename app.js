@@ -836,7 +836,7 @@ function sendWhatsAppOrder() {
   message += `*Total Amount:* *₹${grandTotal}*\n\n`;
   message += `Thank you! Please confirm my order. 🙏`;
 
-  const momomiaPhoneNumber = "919235797507"; // Country code 91 + phone number
+  const momomiaPhoneNumber = "0000000000"; // Country code + phone number
   const whatsappUrl = `https://api.whatsapp.com/send?phone=${momomiaPhoneNumber}&text=${encodeURIComponent(message)}`;
 
   window.open(whatsappUrl, "_blank");
